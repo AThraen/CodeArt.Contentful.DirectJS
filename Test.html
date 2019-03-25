@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script>
+        var exports = {}; // quick fix because 'exports' is not defined in rich-text bundle below
+    </script>
+    <script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div id="content" class="content-container"></div>
+    <h1 cf-data-key="title"></h1>
+    <img cf-data-key="heroImage" />
+    <h3 cf-data-key="description"></h3>
+    <small cf-data-key="publishDate" cf-data-format="yyyy-MM-dd"></small><br/>
+    <p cf-data-key="body" cf-data-format="markdown"></p>
+
+    <ul cf-data-list="tags">
+        <li cf-data-listitem></li>
+    </ul>
+    <!-- author.fields.name -->
+    <script src="CFDirect.js"></script>
+    <script>
+        CFDirect('9409d5e2fb94de7dc4b05217f7343d66fdb74ac0d174222db8e033c246b3012f', 'mx3buqkca63l', '2PtC9h1YqIA6kaUaIsWEQ0');
+ 
+    </script>
+</body>
+</html>
